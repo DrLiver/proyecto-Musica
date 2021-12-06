@@ -15,4 +15,8 @@ require_once 'controller.php';
             $this->view->showHome();
         }
 
+        public function show404() {
+            $this->view->show404();
+        }
+
     }

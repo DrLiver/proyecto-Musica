@@ -1,0 +1,55 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+/* NAVBAR */
+
+    /* FONT DEL TITULO */
+        .navbar-brand {
+            font-family: 'Raleway', sans-serif;
+        }
+
+/* CONTENIDO DEL HOME */
+
+    /* ARTICLE HOME */
+        .section-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 45px;
+        }
+    
+    /* CONTENEDOR TABLA HOME */
+        #table-home, #songManage-table {
+            width: 70%;
+            margin-top: 30px;
+        }
+    /* IMAGENES DE ALBUMS */
+        .album-image {
+            width: 100px;
+            height: 100px;
+        }
+    /* LINKS DE LA TABLA */
+        .element-table-link {
+            color: white;
+            text-decoration: none;
+        }
+
+    /* PATITO 404 */
+        #duck404 {
+            width: 20%;
+            height: 20%;
+        }
+
+/* CONTENIDO DEL ADMINISTRADOR DE CANCIONES */
+
+    /* BARRA DE AÑADIR BUSCAR */
+        #search-add-conteiner {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 50%;
+            margin-top: 30px;
+        }
+
+    
