@@ -24,4 +24,14 @@
             $query->execute(array($id));
         }
 
+        public function addSong ($song, $artist) {
+            $query = $this->db->prepare("INSERT INTO cancion (titulo_cancion,id_album,duracion) VALUES (?,?,?)");
+            $query->execute(array($song->titulo_cancion,$song->id_album,$artist));
+        }
+
+        public function addSongNew ($song) {
+            $query = $this->db->prepare("INSERT INTO cancion (id,titulo_cancion,id_album,id_artista) VALUES (?,?,?,?)");
+            $query->execute(array($song->id,$song->titulo_cancion,$song->id_album,$song->id_artista));
+        }
+
     }

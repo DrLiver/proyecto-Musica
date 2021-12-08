@@ -1,9 +1,11 @@
 <?php
 require_once 'controllers/homeController.php';
 require_once 'controllers/songController.php';
+require_once 'controllers/albumController.php';
 
 $homeController = new homeController();
 $songController = new songController();
+$albumController = new albumController();
 
 
 define('BASE_URL', '//'.$_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . dirname($_SERVER['PHP_SELF']).'/');
@@ -24,8 +26,17 @@ if (!isset($parameters[1])) {
         case "manageSongs":
             $songController->manageSongsMenu();
             break;
+        case "manageAlbums":
+            $albumController->manageAlbumsMenu();
+            break;
         case "addSong":
-            $songController->addSong();
+            $songController->addSongMenu();
+            break;
+        case "addSongOldMethod":
+            $songController->addSongMenuOld();
+            break;
+        case "addAlbum":
+            $albumController->addAlbumMenu();
             break;
         default:
             $homeController->show404();

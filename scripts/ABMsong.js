@@ -1,7 +1,5 @@
 "use strict";
 
-console.log("prueba");
-
 const URL = "api/songs";
 
 async function loadSongs() {
@@ -52,7 +50,7 @@ function showSongs(songs) {
 
         tbodyTabla.appendChild(tr);
 
-        document.getElementById("deleteSong" + song.id).addEventListener("click", function () {
+        document.getElementById("deleteSong" + song.id).addEventListener("click", async function () {
             deleteSong(song.id);
         });
     }
@@ -61,7 +59,7 @@ function showSongs(songs) {
 async function deleteSong(id) {
     try {
         let query = await fetch(URL + "/" + id, {
-            method: "DELETE"
+            'method': "DELETE"
         });
         if (query.ok) {
             loadSongs();
@@ -72,7 +70,5 @@ async function deleteSong(id) {
     } 
     catch (error) {
         console.log("NO SE PUDO CONTACTAR CON EL SERVIDOR" + error);
-    }
-
-
+    }  
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-12-06 04:24:08
+/* Smarty version 3.1.39, created on 2021-12-08 17:11:22
   from 'C:\xampp\htdocs\proyecto\templates\home.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_61ad82585811c2_77677933',
+  'unifunc' => 'content_61b0d92ab3dcd1_75453324',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fc122e257df5083d0309c87440176b6afb7def23' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyecto\\templates\\home.html',
-      1 => 1638757898,
+      1 => 1638979879,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_61ad82585811c2_77677933 (Smarty_Internal_Template $_smarty_tpl) {
-?><article id="home-content">
+function content_61b0d92ab3dcd1_75453324 (Smarty_Internal_Template $_smarty_tpl) {
+?><article class="section-content">
     <h1 class="display-6 subtitle">Ultimos Lanzamientos</h1>
 
     <form class="d-flex">
@@ -29,29 +29,29 @@ function content_61ad82585811c2_77677933 (Smarty_Internal_Template $_smarty_tpl)
         <button class="btn btn-outline-dark" type="submit">Search</button>
     </form>
 
-    <div id="table-home">
-        <table class="table table-dark table-striped table-home">
-            <thead>
-                <tr>
-                    <th scope="col">Caratula</th>
-                    <th scope="col">Titulo</th>
-                    <th scope="col">Artista</th>
-                    <th scope="col">Año</th>
-                    <th scope="col">Tipo</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><img src="files\images\philCollins.jpg" class="album-image" alt="but seriously"></td>
-                    <td><a href="" class="element-table-link">...But Seriously</a></td>
-                    <td><a href="" class="element-table-link">Phil Collins</a></td>
-                    <td>1989</td>
-                    <td>Albúm</td>
-                </tr>
-                
-            </tbody>
-        </table>
-    </div>
+        <div id="table-home">
+            <table class="table table-dark table-striped table-home">
+                <thead>
+                    <tr>
+                        <th scope="col">Caratula</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col">Artista</th>
+                        <th scope="col">Año</th>
+                        <th scope="col">Tipo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="files\images\philCollins.jpg" class="album-image" alt="but seriously"></td>
+                        <td><a href="" class="element-table-link">...But Seriously</a></td>
+                        <td><a href="" class="element-table-link">Phil Collins</a></td>
+                        <td>1989</td>
+                        <td>Albúm</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
 
 </article><?php }
 }

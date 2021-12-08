@@ -1,0 +1,28 @@
+<article class="section-content">
+    <h1 class="display-6 subtitle">Añadir un Albúm Nuevo</h1>
+
+    <form action="api/addAlbum" class="form">
+
+    <div class="label-input-container">
+        <label for="codigo_album" class="form-label">Código Deezer: </label>
+        <input type="text" name="codigo_album" class="form-control" id="albumCode">
+    </div>
+    
+    <div id="codeWarning" class="form-text text-danger">
+    </div>
+    
+        <div class="form-text-album text-primary" id="load-spinner">
+            Los códigos de los álbumes de Deezer son los que aparecen en la URL de la página del álbum. Por Ejemplo: 502723.
+        </div>
+
+        <div class="form-text-album text-secondary">
+            ¿Quieres crear un albúm de forma manual? <a href="{BASE_URL}addAlbum">Crea uno ahora</a>
+        </div>
+
+        <div class="label-input-container submit-container">
+            <input type="button" value="Crear" class="btn btn-outline-dark submit-btn" id="add-album-submit">
+        </div>
+
+    </form>
+
+</article>
