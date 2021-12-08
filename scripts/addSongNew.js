@@ -47,7 +47,7 @@ async function getDataSong(songCode) {
 
     catch (error) {
         console.log(error);
-        document.getElementById("codeWarning").innerHTML = "No pudimos comunicarnos con la API";
+        document.getElementById("codeWarning").innerHTML = "El codigo introducido no pertenece a una canción";
     }
 }
 
