@@ -44,7 +44,7 @@
                             Administrador
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{BASE_URL}manageSongs">Gestionar Canciones</a></li>
+                            <li><a class="dropdown-item" href="manageSongs">Gestionar Canciones</a></li>
                             <li><a class="dropdown-item" href="{BASE_URL}manageAlbums">Gestionar Albúms</a></li>
                             <li><a class="dropdown-item" href="{BASE_URL}manageUsers">Gestionar Usuarios</a></li>
                         </ul>
