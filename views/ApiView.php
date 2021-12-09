@@ -12,6 +12,9 @@
          private function requestStatus($code) {
 
             $status = array(
+                100 => 'Continue',
+                101 => 'Switching Protocols',
+                103	=> 'Early Hints',
                 200 => "OK",
                 201 => "Created",
                 404 => "Not found",

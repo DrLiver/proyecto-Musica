@@ -1,6 +1,6 @@
 "use strict";
 
-const URL = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/";
+const URL = "https://api.deezer.com/album/";
 const addAlbumURL = "api/addAlbum";
 
 document.getElementById("add-album-submit").addEventListener("click", async function () {
